@@ -5,7 +5,9 @@ RUN apk update && apk upgrade && \
     
 # Python
 RUN apk update && apk upgrade && \
-    apk add --no-cache python python-dev py-pip
+    apk add --no-cache python python-dev
+
+RUN curl https://bootstrap.pypa.io/get-pip.py | python
     
 RUN pip install docker-compose
     
