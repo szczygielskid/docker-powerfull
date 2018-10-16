@@ -1,7 +1,7 @@
 FROM docker:latest
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash build-base libstdc++ curl
+    apk add --no-cache bash build-base libstdc++ curl git
     
 # Python
 RUN apk update && apk upgrade && \
